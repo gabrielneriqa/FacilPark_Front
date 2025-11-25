@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>FacilPark - Painel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>FacilPark - Sistema de Estacionamento</h1>
+
+    <div class="card">
+        <h2>Registrar Entrada</h2>
+        <input id="entrada-tipo" placeholder="Tipo (carro, moto, caminhao)">
+        <input id="entrada-placa" placeholder="Placa (ABC-1234)">
+        <button onclick="registrarEntrada()">Registrar Entrada</button>
+        <p id="entrada-resposta"></p>
+    </div>
+
+    <div class="card">
+        <h2>Registrar Saída</h2>
+        <input id="saida-placa" placeholder="Placa (ABC-1234)">
+        <button onclick="registrarSaida()">Registrar Saída</button>
+        <p id="saida-resposta"></p>
+    </div>
+
+    <div class="card">
+        <h2>Vagas</h2>
+        <button onclick="listarVagas()">Listar Vagas</button>
+        <ul id="lista-vagas"></ul>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
